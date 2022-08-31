@@ -4,23 +4,26 @@ const sum = (a, b) => {
 }
 
 // just a console log for ourselves.
-console.log(sum(7, 3))
+//console.log(sum(7, 3))
+
+//============Conversiones=====================//
 
 const fromEuroToDollar = function (valueInEuro) {
     // convert the given valueInEuro to dollars
     let valueInDollar = valueInEuro * 1.2;
     //return the dollar value
-    return parseFloat(valueInDollar.toFixed(1));
+    return parseFloat(valueInDollar.toFixed(2));
 }
-const fromDollarToYen = function (DollarAmount) {
-    // convert the given valueInEuro to dollars
+
+function fromDollarToYen(DollarAmount) {
+    //convert the given DollarAmount to Yen
     let valueInYen = (DollarAmount / 1.2) * 127.9;
     //return the yen value
-    return parseFloat(valueInYen.toFixed(1));
+    return parseFloat(valueInYen.toFixed(2));
 }
 
 const fromYenToPound = function (YenAmount) {
-    // convert the given valueInEuro to dollars
+    //convert the given YenAmount to Pounds
     let valueInPound = (YenAmount / 127.9) * 0.8;
     //return the pound value
     return parseFloat(valueInPound.toFixed(4));
